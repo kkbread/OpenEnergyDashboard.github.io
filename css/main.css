@@ -156,6 +156,13 @@ footer {
     background-color: #f1f1f1;
 }
 
+/* homepage slides */
+.item-a { width:200px; }
+.item-b { width:340px; }
+.item-c { width:290px; }
+.item-d { width:220px; }
+.item-e { width:350px; }
+
 @media (max-width: 600px) {
     .contact-container {
         flex-direction: column;
@@ -167,4 +174,10 @@ footer {
         height: 150px;
 
     }
+}
+
+/* homepage slides */
+@media (max-width: 768px) {
+    .item-a { width:120px; }
+    .item-b { width:250px; }
 }
