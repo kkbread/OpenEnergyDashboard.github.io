@@ -168,6 +168,9 @@ footer {
     gap: 8px;
     background-color: #ffffff;
     padding: 1px;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
     
 }
   
