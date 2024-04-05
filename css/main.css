@@ -203,8 +203,25 @@ footer {
     margin: 0;
     padding: 0;
 }
-.item3 { grid-area: left; }
-.item4 { grid-area: right; }
+.item3 {
+    grid-area: first;
+    position: relative;
+    align-text: center;
+    width: 100%;
+    background-color: #9ec5e8;
+}
+.item3:hover .overlay {
+    opacity: 1;
+}
+.item4 { 
+    grid-area: second;
+    position: relative;
+    align-text: center;
+    width: 100%;
+}
+.item4:hover .overlay {
+    opacity: 1;
+}
 .item5 { grid-area: text; }
 .item6 { grid-area: video; }
 
@@ -317,3 +334,29 @@ img {
 .demo:hover {
     opacity: 1;
 }
+
+/* styling for description cards: "Why OED?", etc. */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: center;
+    transition: .5s ease;
+    background-color: #b5d7a8;
+    overflow-y: auto;
+  }
+  
+  .overlay-content {
+      background-color: #b5d7a8;
+      padding: 20px;
+      max-width: 80%; /* Limit the maximum width of the overlay content */
+      font-size: 20px;
+      color: #606562;
+      text-align: left;
+  }
+  
