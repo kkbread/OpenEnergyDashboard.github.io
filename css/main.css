@@ -206,7 +206,7 @@ footer {
     padding: 0;
 }
 .item3 {
-    grid-area: first;
+    grid-area: left;
     position: relative;
     text-align: center;
     width: 100%;
@@ -216,7 +216,7 @@ footer {
     opacity: 1;
 }
 .item4 { 
-    grid-area: second;
+    grid-area: right;
     position: relative;
     text-align: center;
     width: 100%;
