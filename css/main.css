@@ -237,12 +237,16 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
   
 /* Hide the images by default */
 .mySlides {
     display: none;
-    height: 80%;
+    height: auto;
+    width: 100%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -322,6 +326,8 @@ img {
 .column {
     float: left;
     width: 16.66%;
+    margin: 0;
+    padding: 0;
 }
   
 /* Add a transparency effect for thumnbail images */
