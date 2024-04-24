@@ -222,7 +222,6 @@ footer {
     margin: 0;
     width: 80%;
     text-align: center;
-    display: flex; 
     align-items: center;
     margin-bottom: 20px;
 }
