@@ -164,13 +164,14 @@ footer {
       'header header header header header header'
       'gallery gallery gallery gallery gallery gallery'
       'left left left right right right'
-      'text text text text text video';
+      'text text text text video video';
     gap: 8px;
     background-color: #ffffff;
     padding: 1px;
-    max-width: none;
-    margin: 0;
+    max-width: 90vw; 
+    margin: 0 auto;
     box-sizing: border-box;
+    grid-template-columns: repeat(6, 1fr);
     
 }
   
@@ -204,6 +205,9 @@ footer {
     grid-area: gallery; 
     margin: 0;
     padding: 0;
+    justify-content: center;
+    max-height: 50vh;
+    overflow: auto;
 }
 .item3 {
     grid-area: left;
@@ -241,15 +245,22 @@ img {
 .container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: auto;
     margin: 0 auto;
+    overflow: hidden;
 }
   
 /* Hide the images by default */
 .mySlides {
     display: none;
-    height: 400px;
     width: 100%;
+    height: calc(100% - 100px);
+}
+
+.mySlides img {
+    width: 100%;
+    height: 250px;
+    object-fit: stretch; 
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -313,58 +324,14 @@ img {
   
 /* Container for image text */
 .caption-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
+    font-size: 14px; 
     color: white;
+    padding: 0px;
+    box-sizing: border-box; 
 }
-  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-    margin: 0;
-    padding: 0;
-}
-  
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-  
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-/* styling for description cards: "Why OED?", etc. */
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    display: center;
-    transition: .5s ease;
-    background-color: #b5d7a8;
-    overflow-y: auto;
-  }
-  
-  .overlay-content {
-      background-color: #b5d7a8;
-      padding: 20px;
-      max-width: 80%; /* Limit the maximum width of the overlay content */
-      font-size: 20px;
-      color: #606562;
-      text-align: left;
-  }
-  
