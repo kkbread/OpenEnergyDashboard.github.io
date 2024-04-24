@@ -185,7 +185,7 @@ footer {
       'header header header header header header'
       'gallery gallery gallery gallery gallery gallery'
       'left left left right right right'
-      'text text text text video video';
+      'body body body body body body';
     gap: 8px;
     background-color: #ffffff;
     padding: 1px;
@@ -193,7 +193,7 @@ footer {
     margin: 0 auto;
     box-sizing: border-box;
     grid-template-columns: repeat(6, 1fr);
-    
+    grid-template-rows: auto auto auto auto; 
 }
   
 .grid-container > div {
@@ -258,8 +258,7 @@ footer {
     height: 100%;
 }
 
-.item5 { grid-area: text; }
-.item6 { grid-area: video; }
+.item5 { grid-area: body; }
 
 /* styling for gallery */
 
@@ -443,6 +442,35 @@ img {
 
 @media screen and (min-width: 1440px) {
     .flip-card-back p {
-        font-size: 1.25vw; 
+        font-size: 1.1vw; 
     }
+}
+
+/* Callout cards for redirecting */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.card {
+    flex: 0 0 200px; margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card-container img{
+    max-width: 100%;
+}
+.texts{
+    padding: 5px; margin-bottom:10px;
+}
+.texts button{
+    border: none; padding: 5px 15px;
+    background: #566270; color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+.texts button:hover{
+    background: #E0E3DA; color: #566270; cursor: pointer;
 }
