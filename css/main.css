@@ -348,7 +348,7 @@ img {
     background-color: transparent;
     height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
 }
   
 /* This container is needed to position the front and back side */
@@ -409,18 +409,18 @@ img {
 /* adjusting font size to screen */
 @media screen and (min-width: 720px) and (max-width: 1023px) {
     .flip-card-back p {
-        font-size: 1.7vw; /* Adjust font size for larger screens */
+        font-size: 1.7vw; 
     }
 }
 
 @media screen and (min-width: 1024px) {
     .flip-card-back p {
-        font-size: 1.5vw; /* Adjust font size for screens 1024px and larger */
+        font-size: 1.5vw; 
     }
 }
 
 @media screen and (min-width: 1440px) {
     .flip-card-back p {
-        font-size: 1.25vw; /* Adjust font size for screens 1440px and larger */
+        font-size: 1.25vw; 
     }
 }
